@@ -1,0 +1,19 @@
+.Button_TxtIcon {
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    background-color: #bdbdbd;
+    border: none;
+    margin: 4px 2px;
+    color: rgb(47, 47, 47);
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+.Button_TxtIcon:hover {
+    opacity: 1
+}

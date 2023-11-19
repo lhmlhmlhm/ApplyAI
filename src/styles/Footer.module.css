@@ -1,0 +1,33 @@
+.footer {
+    background-image: linear-gradient(to top, #9f9f9f92, #9f9f9f00);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+.footer img{
+    height: 14px;
+    margin-right: 10px;
+}
+.footerRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    align-items: center;
+}
+.left{
+    text-align: left;
+    flex: 1;
+}
+.right{
+    text-align: right;
+    flex: 1;
+}
+.middle{
+    text-align: center;
+    flex: 1;
+}

@@ -1,0 +1,17 @@
+.InputBox_Lbl label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.InputBox_Lbl input {
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.CheckBox_Lbl {
+    display: flex;
+    align-items: center;
+  }

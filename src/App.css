@@ -1,0 +1,179 @@
+/* ----- Style Guide ----- */
+:root {
+  --small_font: 12px;
+  --mid_font: 14px;
+  --large_font: 18px;
+  /* --white: #ffffff; */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  min-height: 100vh; /* Minimum height to cover the viewport */
+  background-image: linear-gradient(to top right, #251313, #291c7b);
+  background-attachment: fixed; /* Optional: keeps the gradient fixed during scroll */
+  color: #ffffff;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 70px;
+}
+
+/* ----- Profile Page ----- */
+/* -- side menu -- */
+.profile {
+  display: flex;
+  justify-content: flex-start; /* Space out the left and right sections */
+  gap: 30px;
+  padding: 40px 60px;
+}
+.sidebar {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  flex-shrink: 0; /* Prevents the div from shrinking */
+  min-width: 200px;
+  /* width: 30%; */
+}
+.sidebar_top {
+  align-items: center;
+  font-size: var(--small_font);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sidebar_top img {
+  height: 60px;
+}
+.sidebar_mid {
+  padding-top: 10px;
+  font-size: var(--mid_font);
+  padding-bottom: 40px;
+}
+.sidebar_mid .menu_item{
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically center the icon and text */
+  padding: 10px; /* Add some padding for spacing */
+}
+.sidebar_mid .menu_item:not(.active) {
+  font-weight: normal;
+  color: #a2a2a2;
+}
+.sidebar_mid .menu_item.active {
+  font-weight: bold;
+  color: #ffffff;
+}
+.sidebar_mid .menu_item:not(.active) img {
+  margin-right: 10px; /* Add some space between the icon and the text */
+  height: 24px; 
+  width: 24px; 
+}
+.sidebar_mid .menu_item.active img {
+  margin-right: 10px; /* Add some space between the icon and the text */
+  height: 24px; 
+  width: 24px; 
+}
+
+/* -- form input -- */
+.form_container {
+  display: flex;
+  padding: 20px 60px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.14);
+  border-radius: 36px;
+  box-sizing: border-box;
+  flex-grow: 1; /* Takes up the remaining space */
+  font-size: var(--mid_font);
+  min-width: 500px;
+  /* width: 60%; */
+}
+.form_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(240, 248, 255, 0.14); */
+}
+.form_box .info_top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form_box .info_top_child {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+}
+.form_box .name_input {
+  padding-right: 20px;
+}
+.form_box .info_top_child .InputBox_Lbl {
+  /* width: 90%; */
+  margin: 4px 0;
+}
+.form_box .student_check {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px 10px 0px;
+  width: 100%;
+}
+.form_box .info_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.form_box .info_bottom .InputBox_Lbl {
+  /* width: 100%; */
+  margin: 4px 0;
+  padding-right: 23px;
+}
+.second_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
